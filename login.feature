@@ -5,13 +5,13 @@ Cenário: Autenticação válida
     Dado que que o cliente acesse a página de login da plataforma EBAC-SHOP
     Quando o cliente digitar o usuário "jose.ernesto@ebac.com.br"
     E a senha "admin@123"
-    Then direcionar para a tela de checkout
+    Então direcionar para a tela de checkout
 
 Esquema do Cenário: Esquema do Cenário name: Usuário ou senha inválidos
     Dado que que o cliente acesse a página de login da plataforma EBAC-SHOP
     Quando o cliente digitar o <usuario>
     E a <senha>
-    Then deve exibir uma mensagem "Usuário ou senha inválidos"
+    Então deve exibir uma mensagem "Usuário ou senha inválidos"
 
 Examples:
 |usuario                      |senha          |
