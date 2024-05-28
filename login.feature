@@ -13,7 +13,7 @@ Esquema do Cenário: Esquema do Cenário name: Usuário ou senha inválidos
     E a <senha>
     Então deve exibir uma mensagem "Usuário ou senha inválidos"
 
-Examples:
+Exemplos:
 |usuario                      |senha          |
 |"joao@ebac.com.br"           |"admin@123"    |
 |"maria@ebac.com.br"          |"teste@123"    |
