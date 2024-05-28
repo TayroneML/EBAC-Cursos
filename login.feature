@@ -1,15 +1,15 @@
+   
+Funcionalidade: Login na plataforma
 
-Feature: Login na plataforma
-
-Scenario: Autenticação válida
-    Given que o cliente acesse a página de login da plataforma EBAC-SHOP
-    When o cliente digitar o usuário "jose.ernesto@ebac.com.br"
-    And a senha "admin@123"
+Cenário: Autenticação válida
+    Dado que que o cliente acesse a página de login da plataforma EBAC-SHOP
+    Quando o cliente digitar o usuário "jose.ernesto@ebac.com.br"
+    E a senha "admin@123"
     Then direcionar para a tela de checkout
 
-Scenario Outline: Scenario Outline name: Usuário ou senha inválidos
-    Given que o cliente acesse a página de login da plataforma EBAC-SHOP
-    When o cliente digitar o <usuario>
+Esquema do Cenário: Esquema do Cenário name: Usuário ou senha inválidos
+    Dado que que o cliente acesse a página de login da plataforma EBAC-SHOP
+    Quando o cliente digitar o <usuario>
     E a <senha>
     Then deve exibir uma mensagem "Usuário ou senha inválidos"
 
